@@ -7,21 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B4A2E291E7945E50017087A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4A2E281E7945E50017087A /* AppDelegate.swift */; };
-		7B4A2E2B1E7945E50017087A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4A2E2A1E7945E50017087A /* ViewController.swift */; };
-		7B4A2E2E1E7945E50017087A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4A2E2C1E7945E50017087A /* Main.storyboard */; };
 		7B4A2E301E7945E50017087A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B4A2E2F1E7945E50017087A /* Assets.xcassets */; };
 		7B4A2E331E7945E50017087A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4A2E311E7945E50017087A /* LaunchScreen.storyboard */; };
+		7BD4D6CA1E7947F7007A1D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */; };
+		7BD4D6CB1E7947F7007A1D81 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C71E7947F7007A1D81 /* Info.plist */; };
+		7BD4D6CC1E7947F7007A1D81 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C91E7947F7007A1D81 /* GamesListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7B4A2E251E7945E50017087A /* TwitchClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitchClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B4A2E281E7945E50017087A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B4A2E2A1E7945E50017087A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7B4A2E2D1E7945E50017087A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B4A2E2F1E7945E50017087A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B4A2E321E7945E50017087A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7B4A2E341E7945E50017087A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BD4D6C71E7947F7007A1D81 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BD4D6C91E7947F7007A1D81 /* GamesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +53,29 @@
 		7B4A2E271E7945E50017087A /* TwitchClient */ = {
 			isa = PBXGroup;
 			children = (
-				7B4A2E281E7945E50017087A /* AppDelegate.swift */,
-				7B4A2E2A1E7945E50017087A /* ViewController.swift */,
-				7B4A2E2C1E7945E50017087A /* Main.storyboard */,
+				7BD4D6C51E7947F7007A1D81 /* SupportingFiles */,
+				7BD4D6C81E7947F7007A1D81 /* ViewControllers */,
 				7B4A2E2F1E7945E50017087A /* Assets.xcassets */,
 				7B4A2E311E7945E50017087A /* LaunchScreen.storyboard */,
-				7B4A2E341E7945E50017087A /* Info.plist */,
 			);
 			path = TwitchClient;
+			sourceTree = "<group>";
+		};
+		7BD4D6C51E7947F7007A1D81 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */,
+				7BD4D6C71E7947F7007A1D81 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		7BD4D6C81E7947F7007A1D81 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BD4D6C91E7947F7007A1D81 /* GamesListViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +110,7 @@
 				TargetAttributes = {
 					7B4A2E241E7945E50017087A = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -125,7 +139,7 @@
 			files = (
 				7B4A2E331E7945E50017087A /* LaunchScreen.storyboard in Resources */,
 				7B4A2E301E7945E50017087A /* Assets.xcassets in Resources */,
-				7B4A2E2E1E7945E50017087A /* Main.storyboard in Resources */,
+				7BD4D6CB1E7947F7007A1D81 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +150,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B4A2E2B1E7945E50017087A /* ViewController.swift in Sources */,
-				7B4A2E291E7945E50017087A /* AppDelegate.swift in Sources */,
+				7BD4D6CC1E7947F7007A1D81 /* GamesListViewController.swift in Sources */,
+				7BD4D6CA1E7947F7007A1D81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7B4A2E2C1E7945E50017087A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B4A2E2D1E7945E50017087A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7B4A2E311E7945E50017087A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -258,7 +264,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TwitchClient/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TwitchClient/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyon.TwitchClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,7 +277,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TwitchClient/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TwitchClient/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyon.TwitchClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,6 +305,7 @@
 				7B4A2E391E7945E50017087A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
