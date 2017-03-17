@@ -21,9 +21,11 @@
 		7B72ED611E7AB95B00F1133B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED601E7AB95B00F1133B /* Game.swift */; };
 		7B72ED631E7AB98E00F1133B /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED621E7AB98E00F1133B /* List.swift */; };
 		7B72ED651E7ABC7500F1133B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED641E7ABC7500F1133B /* Constants.swift */; };
+		7B790B751E7BD00B00BAFD5A /* Environments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B790B741E7BD00B00BAFD5A /* Environments.plist */; };
+		7B790B771E7BD10E00BAFD5A /* Environments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B761E7BD10E00BAFD5A /* Environments.swift */; };
+		7B790B7A1E7BD72900BAFD5A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B791E7BD72900BAFD5A /* LoadingView.swift */; };
 		7BD4D6CA1E7947F7007A1D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */; };
 		7BD4D6CC1E7947F7007A1D81 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C91E7947F7007A1D81 /* GamesListViewController.swift */; };
-		7BDF8FEF1E7AC2DA000D11C3 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FEE1E7AC2DA000D11C3 /* Views.swift */; };
 		7BDF8FF11E7AC30D000D11C3 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FF01E7AC30D000D11C3 /* Macros.swift */; };
 		7BDF8FF31E7AC48F000D11C3 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FF21E7AC48F000D11C3 /* BaseVC.swift */; };
 		7BDF8FF61E7AC50E000D11C3 /* Margin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FF51E7AC50E000D11C3 /* Margin.swift */; };
@@ -47,10 +49,12 @@
 		7B72ED601E7AB95B00F1133B /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		7B72ED621E7AB98E00F1133B /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		7B72ED641E7ABC7500F1133B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7B790B741E7BD00B00BAFD5A /* Environments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Environments.plist; sourceTree = "<group>"; };
+		7B790B761E7BD10E00BAFD5A /* Environments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environments.swift; sourceTree = "<group>"; };
+		7B790B791E7BD72900BAFD5A /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BD4D6C71E7947F7007A1D81 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BD4D6C71E7947F7007A1D81 /* TwitchClient-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TwitchClient-Info.plist"; sourceTree = "<group>"; };
 		7BD4D6C91E7947F7007A1D81 /* GamesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
-		7BDF8FEE1E7AC2DA000D11C3 /* Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		7BDF8FF01E7AC30D000D11C3 /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
 		7BDF8FF21E7AC48F000D11C3 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		7BDF8FF51E7AC50E000D11C3 /* Margin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Margin.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 		7B4A2E271E7945E50017087A /* TwitchClient */ = {
 			isa = PBXGroup;
 			children = (
+				7B790B781E7BD72100BAFD5A /* Views */,
 				7BDF8FF41E7AC506000D11C3 /* Enums */,
 				7B72ED5F1E7AB95100F1133B /* Models */,
 				7B72ED5C1E7AB90900F1133B /* Services */,
@@ -111,7 +116,6 @@
 				7BD4D6C81E7947F7007A1D81 /* ViewControllers */,
 				7B4A2E2F1E7945E50017087A /* Assets.xcassets */,
 				7B4A2E311E7945E50017087A /* LaunchScreen.storyboard */,
-				7BDF8FEE1E7AC2DA000D11C3 /* Views.swift */,
 			);
 			path = TwitchClient;
 			sourceTree = "<group>";
@@ -150,18 +154,28 @@
 			children = (
 				7B72ED601E7AB95B00F1133B /* Game.swift */,
 				7B72ED621E7AB98E00F1133B /* List.swift */,
+				7B790B761E7BD10E00BAFD5A /* Environments.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		7B790B781E7BD72100BAFD5A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B790B791E7BD72900BAFD5A /* LoadingView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		7BD4D6C51E7947F7007A1D81 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */,
-				7BD4D6C71E7947F7007A1D81 /* Info.plist */,
+				7BD4D6C71E7947F7007A1D81 /* TwitchClient-Info.plist */,
 				7B72ED5A1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift */,
 				7B72ED641E7ABC7500F1133B /* Constants.swift */,
 				7BDF8FF01E7AC30D000D11C3 /* Macros.swift */,
+				7B790B741E7BD00B00BAFD5A /* Environments.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -257,6 +271,7 @@
 			files = (
 				7B4A2E331E7945E50017087A /* LaunchScreen.storyboard in Resources */,
 				7B4A2E301E7945E50017087A /* Assets.xcassets in Resources */,
+				7B790B751E7BD00B00BAFD5A /* Environments.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,13 +353,14 @@
 				7B72ED631E7AB98E00F1133B /* List.swift in Sources */,
 				7BDF8FF81E7AC8A1000D11C3 /* TwitchClientError.swift in Sources */,
 				7BDF8FF11E7AC30D000D11C3 /* Macros.swift in Sources */,
+				7B790B771E7BD10E00BAFD5A /* Environments.swift in Sources */,
 				7B5C40181E7AB3520001A534 /* Router.swift in Sources */,
 				7BDF8FF61E7AC50E000D11C3 /* Margin.swift in Sources */,
 				7B72ED651E7ABC7500F1133B /* Constants.swift in Sources */,
+				7B790B7A1E7BD72900BAFD5A /* LoadingView.swift in Sources */,
 				7B72ED611E7AB95B00F1133B /* Game.swift in Sources */,
 				7B5C401C1E7AB5000001A534 /* Dictionary_Extension.swift in Sources */,
 				7BDF8FF31E7AC48F000D11C3 /* BaseVC.swift in Sources */,
-				7BDF8FEF1E7AC2DA000D11C3 /* Views.swift in Sources */,
 				7B5C40161E7AB2A10001A534 /* HTTPClient.swift in Sources */,
 				7B5C401A1E7AB3780001A534 /* APIParams.swift in Sources */,
 				7B5C40101E7AB1790001A534 /* RxSwift_Extension.swift in Sources */,
@@ -463,7 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = TwitchClient/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = "TwitchClient/SupportingFiles/TwitchClient-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyon.TwitchClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -477,7 +493,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = TwitchClient/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = "TwitchClient/SupportingFiles/TwitchClient-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyon.TwitchClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";

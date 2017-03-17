@@ -11,6 +11,7 @@ import Cartography
 
 final class GamesListViewController: BaseVC {
     fileprivate let gamesService: GamesServiceProtocol
+    fileprivate let tableView = UITableView()
 
     init(gamesService: GamesServiceProtocol) {
         self.gamesService = gamesService
