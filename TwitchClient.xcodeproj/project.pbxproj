@@ -106,14 +106,14 @@
 		7B4A2E271E7945E50017087A /* TwitchClient */ = {
 			isa = PBXGroup;
 			children = (
-				7B790B781E7BD72100BAFD5A /* Views */,
 				7BDF8FF41E7AC506000D11C3 /* Enums */,
-				7B72ED5F1E7AB95100F1133B /* Models */,
-				7B72ED5C1E7AB90900F1133B /* Services */,
 				7B5C400E1E7AB1660001A534 /* Extensions */,
 				7B5C40141E7AB2170001A534 /* HTTP */,
+				7B72ED5F1E7AB95100F1133B /* Models */,
+				7B72ED5C1E7AB90900F1133B /* Services */,
 				7BD4D6C51E7947F7007A1D81 /* SupportingFiles */,
 				7BD4D6C81E7947F7007A1D81 /* ViewControllers */,
+				7B790B781E7BD72100BAFD5A /* Views */,
 				7B4A2E2F1E7945E50017087A /* Assets.xcassets */,
 				7B4A2E311E7945E50017087A /* LaunchScreen.storyboard */,
 			);
@@ -147,16 +147,18 @@
 				7B72ED5D1E7AB91700F1133B /* GamesService.swift */,
 			);
 			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		7B72ED5F1E7AB95100F1133B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7B790B761E7BD10E00BAFD5A /* Environments.swift */,
 				7B72ED601E7AB95B00F1133B /* Game.swift */,
 				7B72ED621E7AB98E00F1133B /* List.swift */,
-				7B790B761E7BD10E00BAFD5A /* Environments.swift */,
 			);
 			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7B790B781E7BD72100BAFD5A /* Views */ = {
@@ -165,17 +167,18 @@
 				7B790B791E7BD72900BAFD5A /* LoadingView.swift */,
 			);
 			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		7BD4D6C51E7947F7007A1D81 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */,
-				7BD4D6C71E7947F7007A1D81 /* TwitchClient-Info.plist */,
-				7B72ED5A1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift */,
 				7B72ED641E7ABC7500F1133B /* Constants.swift */,
-				7BDF8FF01E7AC30D000D11C3 /* Macros.swift */,
+				7B72ED5A1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift */,
 				7B790B741E7BD00B00BAFD5A /* Environments.plist */,
+				7BDF8FF01E7AC30D000D11C3 /* Macros.swift */,
+				7BD4D6C71E7947F7007A1D81 /* TwitchClient-Info.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -183,8 +186,8 @@
 		7BD4D6C81E7947F7007A1D81 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7BD4D6C91E7947F7007A1D81 /* GamesListViewController.swift */,
 				7BDF8FF21E7AC48F000D11C3 /* BaseVC.swift */,
+				7BD4D6C91E7947F7007A1D81 /* GamesListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				7BDF8FF71E7AC8A1000D11C3 /* TwitchClientError.swift */,
 			);
 			name = Enums;
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		F2B8E82D9177BE8914DB26AE /* Frameworks */ = {
