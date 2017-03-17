@@ -7,20 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		757F603DA330060C6C58E7B0 /* Pods_TwitchClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55E914E5C5E9C61F0A1B2BA /* Pods_TwitchClient.framework */; };
 		7B4A2E301E7945E50017087A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B4A2E2F1E7945E50017087A /* Assets.xcassets */; };
 		7B4A2E331E7945E50017087A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4A2E311E7945E50017087A /* LaunchScreen.storyboard */; };
+		7B5C40101E7AB1790001A534 /* RxSwift_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C400F1E7AB1790001A534 /* RxSwift_Extension.swift */; };
+		7B5C40161E7AB2A10001A534 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C40151E7AB2A10001A534 /* HTTPClient.swift */; };
+		7B5C40181E7AB3520001A534 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C40171E7AB3520001A534 /* Router.swift */; };
+		7B5C401A1E7AB3780001A534 /* APIParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C40191E7AB3780001A534 /* APIParams.swift */; };
+		7B5C401C1E7AB5000001A534 /* Dictionary_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C401B1E7AB5000001A534 /* Dictionary_Extension.swift */; };
+		7B5C401E1E7AB6340001A534 /* RequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C401D1E7AB6340001A534 /* RequestAdapter.swift */; };
+		7B72ED5B1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED5A1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift */; };
+		7B72ED5E1E7AB91700F1133B /* GamesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED5D1E7AB91700F1133B /* GamesService.swift */; };
+		7B72ED611E7AB95B00F1133B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED601E7AB95B00F1133B /* Game.swift */; };
+		7B72ED631E7AB98E00F1133B /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED621E7AB98E00F1133B /* List.swift */; };
+		7B72ED651E7ABC7500F1133B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED641E7ABC7500F1133B /* Constants.swift */; };
 		7BD4D6CA1E7947F7007A1D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */; };
 		7BD4D6CB1E7947F7007A1D81 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C71E7947F7007A1D81 /* Info.plist */; };
 		7BD4D6CC1E7947F7007A1D81 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C91E7947F7007A1D81 /* GamesListViewController.swift */; };
+		7BDF8FEF1E7AC2DA000D11C3 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FEE1E7AC2DA000D11C3 /* Views.swift */; };
+		7BDF8FF11E7AC30D000D11C3 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FF01E7AC30D000D11C3 /* Macros.swift */; };
+		7BDF8FF31E7AC48F000D11C3 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FF21E7AC48F000D11C3 /* BaseVC.swift */; };
+		7BDF8FF61E7AC50E000D11C3 /* Margin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FF51E7AC50E000D11C3 /* Margin.swift */; };
+		7BDF8FF81E7AC8A1000D11C3 /* TwitchClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FF71E7AC8A1000D11C3 /* TwitchClientError.swift */; };
+		7BDF8FFB1E7ACA0C000D11C3 /* UIView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FFA1E7ACA0C000D11C3 /* UIView_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		232D71470C99D354D0E53A7D /* Pods-TwitchClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchClient/Pods-TwitchClient.release.xcconfig"; sourceTree = "<group>"; };
 		7B4A2E251E7945E50017087A /* TwitchClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitchClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4A2E2F1E7945E50017087A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B4A2E321E7945E50017087A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B5C400F1E7AB1790001A534 /* RxSwift_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwift_Extension.swift; sourceTree = "<group>"; };
+		7B5C40151E7AB2A10001A534 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		7B5C40171E7AB3520001A534 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		7B5C40191E7AB3780001A534 /* APIParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIParams.swift; sourceTree = "<group>"; };
+		7B5C401B1E7AB5000001A534 /* Dictionary_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary_Extension.swift; sourceTree = "<group>"; };
+		7B5C401D1E7AB6340001A534 /* RequestAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAdapter.swift; sourceTree = "<group>"; };
+		7B72ED5A1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjectionConfigurator.swift; sourceTree = "<group>"; };
+		7B72ED5D1E7AB91700F1133B /* GamesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesService.swift; sourceTree = "<group>"; };
+		7B72ED601E7AB95B00F1133B /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		7B72ED621E7AB98E00F1133B /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		7B72ED641E7ABC7500F1133B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BD4D6C71E7947F7007A1D81 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BD4D6C91E7947F7007A1D81 /* GamesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
+		7BDF8FEE1E7AC2DA000D11C3 /* Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		7BDF8FF01E7AC30D000D11C3 /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
+		7BDF8FF21E7AC48F000D11C3 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		7BDF8FF51E7AC50E000D11C3 /* Margin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Margin.swift; sourceTree = "<group>"; };
+		7BDF8FF71E7AC8A1000D11C3 /* TwitchClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchClientError.swift; sourceTree = "<group>"; };
+		7BDF8FFA1E7ACA0C000D11C3 /* UIView_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Extension.swift; sourceTree = "<group>"; };
+		A534830084560746B460B84F /* Pods-TwitchClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchClient/Pods-TwitchClient.debug.xcconfig"; sourceTree = "<group>"; };
+		C55E914E5C5E9C61F0A1B2BA /* Pods_TwitchClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +66,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757F603DA330060C6C58E7B0 /* Pods_TwitchClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		553C946641D9FC80F2470AB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A534830084560746B460B84F /* Pods-TwitchClient.debug.xcconfig */,
+				232D71470C99D354D0E53A7D /* Pods-TwitchClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7B4A2E1C1E7945E50017087A = {
 			isa = PBXGroup;
 			children = (
-				7B4A2E271E7945E50017087A /* TwitchClient */,
+				F2B8E82D9177BE8914DB26AE /* Frameworks */,
+				553C946641D9FC80F2470AB8 /* Pods */,
 				7B4A2E261E7945E50017087A /* Products */,
+				7B4A2E271E7945E50017087A /* TwitchClient */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,12 +103,56 @@
 		7B4A2E271E7945E50017087A /* TwitchClient */ = {
 			isa = PBXGroup;
 			children = (
+				7BDF8FF41E7AC506000D11C3 /* Enums */,
+				7B72ED5F1E7AB95100F1133B /* Models */,
+				7B72ED5C1E7AB90900F1133B /* Services */,
+				7B5C400E1E7AB1660001A534 /* Extensions */,
+				7B5C40141E7AB2170001A534 /* HTTP */,
 				7BD4D6C51E7947F7007A1D81 /* SupportingFiles */,
 				7BD4D6C81E7947F7007A1D81 /* ViewControllers */,
 				7B4A2E2F1E7945E50017087A /* Assets.xcassets */,
 				7B4A2E311E7945E50017087A /* LaunchScreen.storyboard */,
+				7BDF8FEE1E7AC2DA000D11C3 /* Views.swift */,
 			);
 			path = TwitchClient;
+			sourceTree = "<group>";
+		};
+		7B5C400E1E7AB1660001A534 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7B5C401B1E7AB5000001A534 /* Dictionary_Extension.swift */,
+				7B5C400F1E7AB1790001A534 /* RxSwift_Extension.swift */,
+				7BDF8FFA1E7ACA0C000D11C3 /* UIView_Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7B5C40141E7AB2170001A534 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				7B5C40191E7AB3780001A534 /* APIParams.swift */,
+				7B5C40151E7AB2A10001A534 /* HTTPClient.swift */,
+				7B5C401D1E7AB6340001A534 /* RequestAdapter.swift */,
+				7B5C40171E7AB3520001A534 /* Router.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		7B72ED5C1E7AB90900F1133B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7B72ED5D1E7AB91700F1133B /* GamesService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		7B72ED5F1E7AB95100F1133B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B72ED601E7AB95B00F1133B /* Game.swift */,
+				7B72ED621E7AB98E00F1133B /* List.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		7BD4D6C51E7947F7007A1D81 /* SupportingFiles */ = {
@@ -66,6 +160,9 @@
 			children = (
 				7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */,
 				7BD4D6C71E7947F7007A1D81 /* Info.plist */,
+				7B72ED5A1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift */,
+				7B72ED641E7ABC7500F1133B /* Constants.swift */,
+				7BDF8FF01E7AC30D000D11C3 /* Macros.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -74,8 +171,26 @@
 			isa = PBXGroup;
 			children = (
 				7BD4D6C91E7947F7007A1D81 /* GamesListViewController.swift */,
+				7BDF8FF21E7AC48F000D11C3 /* BaseVC.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7BDF8FF41E7AC506000D11C3 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7BDF8FF51E7AC50E000D11C3 /* Margin.swift */,
+				7BDF8FF71E7AC8A1000D11C3 /* TwitchClientError.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		F2B8E82D9177BE8914DB26AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C55E914E5C5E9C61F0A1B2BA /* Pods_TwitchClient.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +200,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B4A2E371E7945E50017087A /* Build configuration list for PBXNativeTarget "TwitchClient" */;
 			buildPhases = (
+				292BD0329CB6732418A5EBD0 /* [CP] Check Pods Manifest.lock */,
 				7B4A2E211E7945E50017087A /* Sources */,
+				7BDF8FF91E7AC9CC000D11C3 /* SwiftLint */,
 				7B4A2E221E7945E50017087A /* Frameworks */,
 				7B4A2E231E7945E50017087A /* Resources */,
+				CC1B6FC20E217640F2D6BD83 /* [CP] Embed Pods Frameworks */,
+				B586F85B9CBFCC39D855E242 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,13 +264,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		292BD0329CB6732418A5EBD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7BDF8FF91E7AC9CC000D11C3 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		B586F85B9CBFCC39D855E242 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitchClient/Pods-TwitchClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC1B6FC20E217640F2D6BD83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitchClient/Pods-TwitchClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B4A2E211E7945E50017087A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7BD4D6CC1E7947F7007A1D81 /* GamesListViewController.swift in Sources */,
+				7B72ED5E1E7AB91700F1133B /* GamesService.swift in Sources */,
+				7B5C401E1E7AB6340001A534 /* RequestAdapter.swift in Sources */,
 				7BD4D6CA1E7947F7007A1D81 /* AppDelegate.swift in Sources */,
+				7BDF8FFB1E7ACA0C000D11C3 /* UIView_Extension.swift in Sources */,
+				7B72ED5B1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift in Sources */,
+				7B72ED631E7AB98E00F1133B /* List.swift in Sources */,
+				7BDF8FF81E7AC8A1000D11C3 /* TwitchClientError.swift in Sources */,
+				7BDF8FF11E7AC30D000D11C3 /* Macros.swift in Sources */,
+				7B5C40181E7AB3520001A534 /* Router.swift in Sources */,
+				7BDF8FF61E7AC50E000D11C3 /* Margin.swift in Sources */,
+				7B72ED651E7ABC7500F1133B /* Constants.swift in Sources */,
+				7B72ED611E7AB95B00F1133B /* Game.swift in Sources */,
+				7B5C401C1E7AB5000001A534 /* Dictionary_Extension.swift in Sources */,
+				7BDF8FF31E7AC48F000D11C3 /* BaseVC.swift in Sources */,
+				7BDF8FEF1E7AC2DA000D11C3 /* Views.swift in Sources */,
+				7B5C40161E7AB2A10001A534 /* HTTPClient.swift in Sources */,
+				7B5C401A1E7AB3780001A534 /* APIParams.swift in Sources */,
+				7B5C40101E7AB1790001A534 /* RxSwift_Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +362,7 @@
 				7B4A2E321E7945E50017087A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -262,6 +461,7 @@
 		};
 		7B4A2E381E7945E50017087A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A534830084560746B460B84F /* Pods-TwitchClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -275,6 +475,7 @@
 		};
 		7B4A2E391E7945E50017087A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 232D71470C99D354D0E53A7D /* Pods-TwitchClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";

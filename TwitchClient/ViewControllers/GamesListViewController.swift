@@ -7,8 +7,19 @@
 //
 
 import UIKit
+import Cartography
 
-class GamesListViewController: UIViewController {
+final class GamesListViewController: BaseVC {
+    fileprivate let gamesService: GamesServiceProtocol
+
+    init(gamesService: GamesServiceProtocol) {
+        self.gamesService = gamesService
+        super.init()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError(neededByCompiler)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

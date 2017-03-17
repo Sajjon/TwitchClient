@@ -1,0 +1,37 @@
+disabled_rules:
+  - trailing_newline
+  - trailing_whitespace
+  - todo
+  - closure_parameter_position
+  - unused_closure_parameter
+  - mark
+  - weak_delegate
+included:
+  - TwitchClient
+excluded:
+  - Carthage
+  - Pods
+  - TwitchClient/Enums/Generated
+line_length: 200
+type_name:
+  min_length: 2
+  max_length: 
+    error: 35
+
+file_length:
+  error: 200
+
+variable_name:
+  min_length: 2
+  max_length:
+    warning: 35
+    error:  45
+
+type_body_length:
+  error: 100
+
+function_parameter_count:
+  error: 4
+
+function_body_length:
+  error: 20
