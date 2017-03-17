@@ -22,7 +22,6 @@
 		7B72ED631E7AB98E00F1133B /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED621E7AB98E00F1133B /* List.swift */; };
 		7B72ED651E7ABC7500F1133B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED641E7ABC7500F1133B /* Constants.swift */; };
 		7BD4D6CA1E7947F7007A1D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */; };
-		7BD4D6CB1E7947F7007A1D81 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C71E7947F7007A1D81 /* Info.plist */; };
 		7BD4D6CC1E7947F7007A1D81 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C91E7947F7007A1D81 /* GamesListViewController.swift */; };
 		7BDF8FEF1E7AC2DA000D11C3 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FEE1E7AC2DA000D11C3 /* Views.swift */; };
 		7BDF8FF11E7AC30D000D11C3 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FF01E7AC30D000D11C3 /* Macros.swift */; };
@@ -258,7 +257,6 @@
 			files = (
 				7B4A2E331E7945E50017087A /* LaunchScreen.storyboard in Resources */,
 				7B4A2E301E7945E50017087A /* Assets.xcassets in Resources */,
-				7BD4D6CB1E7947F7007A1D81 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
