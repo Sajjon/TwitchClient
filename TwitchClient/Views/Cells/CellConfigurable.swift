@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+// This is a trick so that we can try to cast any model to `CellConfigurableBase`. We cannot write `if model is CellConfigurable`
+// Since the `CellConfigurable` protocol has associatedType. But we can cast it to `CellConfigurableBase` instead and call the method
+// with the similar signature.
 protocol CellConfigurableBase {
     func configure(with model: Any)
 }
@@ -19,14 +22,13 @@ protocol CellConfigurable: CellConfigurableBase {
 }
 
 extension CellConfigurable {
-    // Adding default implementation of the `CellConfigurableBase` method. So that we can use `CellConfigurableBase` as type erasure.
-    // Since `CellConfigurable` has associated type we cannot try to cast to it. Thus the force cast below will always work.
+    // Adding default implementation of the `CellConfigurableBase` method.
     func configure(with model: Any) {
-        //swiftlint:disable:next force_cast
-        configure(with: model as! Model)
+        guard let `model` = model as? Model else { return }
+        configure(with: model)
     }
 }
 
-protocol ImageCell {
+protocol ImageHolder {
     var imageView: UIImageView { get }
 }

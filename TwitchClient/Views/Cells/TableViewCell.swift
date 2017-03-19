@@ -44,7 +44,7 @@ class TableViewCell: UITableViewCell {
     }
 }
 
-extension TableViewCell: ImageCell {
+extension TableViewCell: ImageHolder {
     override var imageView: UIImageView { return iconView }
 }
 

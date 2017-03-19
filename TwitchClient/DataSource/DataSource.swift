@@ -39,7 +39,7 @@ extension DataSource: UITableViewDataSource {
         if let cell = cell as? CellConfigurableBase {
             cell.configure(with: model)
         }
-        if let imageCell = cell as? ImageCell {
+        if let imageCell = cell as? ImageHolder {
             imageCell.imageView.image = nil
             if let url = model.imageUrl {
                 Nuke.loadImage(with: url, into: imageCell.imageView)

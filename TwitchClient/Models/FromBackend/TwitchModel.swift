@@ -16,6 +16,6 @@ protocol TwitchModel {
 }
 
 extension TwitchModel {
-    // This should probably 
+    // This should probably be moved into a ViewModel, if this would have been a bigger project then it would have used ViewModels.
     var viewerCountFormatted: String { return "👁: \(viewerCount)" }
 }
