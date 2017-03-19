@@ -13,9 +13,9 @@ protocol TwitchModel {
     var viewerCount: Int64 { get }
     var popularity: Int64 { get }
     var imageUrl: URL? { get }
-
 }
 
 extension TwitchModel {
+    // This should probably 
     var viewerCountFormatted: String { return "👁: \(viewerCount)" }
 }

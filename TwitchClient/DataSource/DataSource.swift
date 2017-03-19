@@ -1,5 +1,5 @@
 //
-//  GameListDataSource.swift
+//  DataSource.swift
 //  TwitchClient
 //
 //  Created by Alexander Georgii-Hemming Cyon on 2017-03-17.
@@ -14,6 +14,8 @@ typealias ModelSelected = (TwitchModel) -> Void
 final class DataSource: NSObject {
     fileprivate let models: [TwitchModel]
     fileprivate var cellAction: ModelSelected?
+
+    //MARK: - Initialization
     init(_ models: [TwitchModel], cellAction: ModelSelected? = nil) {
         // sorting is actually not needed since backend already returns the games in the correct sorted order. But if that would change in future we need local sorting
         self.models = models.sorted(by: { model1, model2 -> Bool in
@@ -24,6 +26,8 @@ final class DataSource: NSObject {
 }
 
 let cellIdentifier = "cellIdentifier"
+
+//MARK: - UITableViewDataSource methods
 extension DataSource: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return models.count
@@ -47,6 +51,7 @@ extension DataSource: UITableViewDataSource {
     }
 }
 
+//MARK: - UITableViewDelegate methods
 extension DataSource: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         defer { tableView.deselectRow(at: indexPath, animated: true) }

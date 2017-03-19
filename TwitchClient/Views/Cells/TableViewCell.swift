@@ -11,13 +11,13 @@ import UIKit
 import Cartography
 
 class TableViewCell: UITableViewCell {
-    lazy var nameLabel: UILabel = {
+    fileprivate lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 20)
         return label
     }()
 
-    lazy var viewerCountLabel: UILabel = {
+    fileprivate lazy var viewerCountLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16)
         return label
@@ -31,7 +31,8 @@ class TableViewCell: UITableViewCell {
         return stackView
     }()
 
-    lazy var iconView: UIImageView = UIImageView()
+    //The superclass `UITableViewCell` is using the wanted name `imageView`... 
+    fileprivate lazy var iconView: UIImageView = UIImageView()
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

@@ -19,6 +19,8 @@ protocol CellConfigurable: CellConfigurableBase {
 }
 
 extension CellConfigurable {
+    // Adding default implementation of the `CellConfigurableBase` method. So that we can use `CellConfigurableBase` as type erasure.
+    // Since `CellConfigurable` has associated type we cannot try to cast to it. Thus the force cast below will always work.
     func configure(with model: Any) {
         //swiftlint:disable:next force_cast
         configure(with: model as! Model)

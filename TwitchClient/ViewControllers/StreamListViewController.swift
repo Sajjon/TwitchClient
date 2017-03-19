@@ -32,6 +32,7 @@ final class StreamListViewController: BaseVC {
         }
     }
 
+    //MARK: - Initialization
     init(game: Game, streamsService: StreamsServiceProtocol) {
         self.streamsService = streamsService
         self.game = game
@@ -42,6 +43,7 @@ final class StreamListViewController: BaseVC {
         fatalError(neededByCompiler)
     }
 
+    //MARK: - VC Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -49,6 +51,7 @@ final class StreamListViewController: BaseVC {
     }
 }
 
+//MARK: - Private Methods
 private extension StreamListViewController {
     func setupViews() {
         title = game.name

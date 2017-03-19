@@ -13,7 +13,7 @@
 		7B5C40101E7AB1790001A534 /* RxSwift_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C400F1E7AB1790001A534 /* RxSwift_Extension.swift */; };
 		7B5C40161E7AB2A10001A534 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C40151E7AB2A10001A534 /* HTTPClient.swift */; };
 		7B5C40181E7AB3520001A534 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C40171E7AB3520001A534 /* Router.swift */; };
-		7B5C401A1E7AB3780001A534 /* APIParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C40191E7AB3780001A534 /* APIParams.swift */; };
+		7B5C401A1E7AB3780001A534 /* APIParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C40191E7AB3780001A534 /* APIParameters.swift */; };
 		7B5C401C1E7AB5000001A534 /* Dictionary_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C401B1E7AB5000001A534 /* Dictionary_Extension.swift */; };
 		7B5C401E1E7AB6340001A534 /* RequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C401D1E7AB6340001A534 /* RequestAdapter.swift */; };
 		7B72ED5B1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED5A1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift */; };
@@ -54,7 +54,7 @@
 		7B5C400F1E7AB1790001A534 /* RxSwift_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwift_Extension.swift; sourceTree = "<group>"; };
 		7B5C40151E7AB2A10001A534 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		7B5C40171E7AB3520001A534 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		7B5C40191E7AB3780001A534 /* APIParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIParams.swift; sourceTree = "<group>"; };
+		7B5C40191E7AB3780001A534 /* APIParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIParameters.swift; sourceTree = "<group>"; };
 		7B5C401B1E7AB5000001A534 /* Dictionary_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary_Extension.swift; sourceTree = "<group>"; };
 		7B5C401D1E7AB6340001A534 /* RequestAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAdapter.swift; sourceTree = "<group>"; };
 		7B72ED5A1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjectionConfigurator.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		7B790BB11E7E8F7000BAFD5A /* TwitchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchModel.swift; sourceTree = "<group>"; };
 		7B790BB91E7EAF2A00BAFD5A /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7B790BBB1E7EAF3200BAFD5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		7B790BBD1E7EAFE400BAFD5A /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Strings.swift; path = Strings.swift; sourceTree = "<group>"; };
+		7B790BBD1E7EAFE400BAFD5A /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BD4D6C71E7947F7007A1D81 /* TwitchClient-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TwitchClient-Info.plist"; sourceTree = "<group>"; };
 		7BD4D6C91E7947F7007A1D81 /* GameListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				7B790B7B1E7C008000BAFD5A /* Routers */,
-				7B5C40191E7AB3780001A534 /* APIParams.swift */,
+				7B5C40191E7AB3780001A534 /* APIParameters.swift */,
 				7B5C40151E7AB2A10001A534 /* HTTPClient.swift */,
 				7B5C401D1E7AB6340001A534 /* RequestAdapter.swift */,
 			);
@@ -491,7 +491,7 @@
 				7B5C401C1E7AB5000001A534 /* Dictionary_Extension.swift in Sources */,
 				7BDF8FF31E7AC48F000D11C3 /* BaseVC.swift in Sources */,
 				7B5C40161E7AB2A10001A534 /* HTTPClient.swift in Sources */,
-				7B5C401A1E7AB3780001A534 /* APIParams.swift in Sources */,
+				7B5C401A1E7AB3780001A534 /* APIParameters.swift in Sources */,
 				7B790B9A1E7C350200BAFD5A /* StreamRouter.swift in Sources */,
 				7B5C40101E7AB1790001A534 /* RxSwift_Extension.swift in Sources */,
 			);

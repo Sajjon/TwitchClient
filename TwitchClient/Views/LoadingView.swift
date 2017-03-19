@@ -1,5 +1,5 @@
 //
-//  Views.swift
+//  LoadingView.swift
 //  TwitchClient
 //
 //  Created by Alexander Georgii-Hemming Cyon on 2017-03-16.
@@ -10,7 +10,7 @@ import Cartography
 
 private let selfSize: CGFloat = 200
 final class LoadingView: UIView {
-    //MARK: Variables
+
     fileprivate lazy var activityIndicator: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView()
         activityIndicator.activityIndicatorViewStyle = .whiteLarge
@@ -49,7 +49,7 @@ final class LoadingView: UIView {
     }
 }
 
-//MARK: Private Methods
+//MARK: - Private Methods
 private extension LoadingView {
     func setupViews(_ loadingText: String) {
         backgroundColor = UIColor.black.withAlphaComponent(0.75)

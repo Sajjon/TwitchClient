@@ -43,7 +43,7 @@ extension StreamRouter: Router {
         }
     }
 }
-//player, token, sig, allow_audio_only, allow_source, type, p
+
 extension StreamRouter: ParameterRouter {
     var parameters: APIParameters? {
         switch self {

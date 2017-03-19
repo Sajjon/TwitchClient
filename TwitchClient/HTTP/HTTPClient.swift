@@ -20,10 +20,10 @@ protocol HTTPClientProtocol {
 
 final class HTTPClient {
 
-    //MARK: Variables
     fileprivate let sessionManager: Alamofire.SessionManager
     fileprivate let requestAdapter: RequestAdapter
 
+    //MARK: - Initialization
     init(environments: EnvironmentsProtocol) {
         requestAdapter = RequestAdapter(environments: environments)
         sessionManager = Alamofire.SessionManager()

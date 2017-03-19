@@ -15,7 +15,7 @@ final class GameListViewController: BaseVC {
     fileprivate let bag = DisposeBag()
     fileprivate let gamesService: GamesServiceProtocol
 
-    fileprivate let tableView: UITableView = {
+    fileprivate lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.register(TableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         tableView.rowHeight = imageSizeSmall + 2*M4n.small.rawValue
@@ -30,6 +30,7 @@ final class GameListViewController: BaseVC {
         }
     }
 
+    //MARK: - Initialization
     init(gamesService: GamesServiceProtocol) {
         self.gamesService = gamesService
         super.init(loadingText: .fetchingGames)
@@ -39,6 +40,7 @@ final class GameListViewController: BaseVC {
         fatalError(neededByCompiler)
     }
 
+    //MARK: - VC Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -46,6 +48,7 @@ final class GameListViewController: BaseVC {
     }
 }
 
+//MARK: - Private Methods
 private extension GameListViewController {
     func setupViews() {
         title = tr(.twitchTopGames)
