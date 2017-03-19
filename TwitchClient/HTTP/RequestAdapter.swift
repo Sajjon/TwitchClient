@@ -12,12 +12,13 @@ import Alamofire
 final class RequestAdapter: Alamofire.RequestAdapter {
 
     private let baseUrlString: String
-    private let twitchApiToken: String
+    private let twitchClientId: String
 
     //MARK: - Initialization
     public init(environments: EnvironmentsProtocol) {
         self.baseUrlString = environments.value(for: .baseUrl)
-        self.twitchApiToken = environments.value(for: .apiToken)
+        self.twitchClientId = environments.value(for: .clientId)
+        assert(!twitchClientId.isEmpty, "Paste in your twitch client id in the `Environments.plist`")
     }
 
     //MARK: - RequestAdapter
@@ -25,7 +26,7 @@ final class RequestAdapter: Alamofire.RequestAdapter {
         var urlRequest = urlRequest
         urlRequest.prependUrl(prefix: baseUrlString)
         log.debug(urlRequest.url?.absoluteString ?? "invalid url")
-        urlRequest.setValue(twitchApiToken, forHTTPHeaderField: "Client-ID")
+        urlRequest.setValue(twitchClientId, forHTTPHeaderField: "Client-ID")
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
         urlRequest.setValue("application/json", forHTTPHeaderField: "Accept")
         return urlRequest

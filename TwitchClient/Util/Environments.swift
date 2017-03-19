@@ -11,7 +11,7 @@ import Foundation
 typealias Plist = [String: AnyObject]
 
 enum EnvironmentKey: String {
-    case apiToken = "TwitchAPIToken"
+    case clientId = "TwitchClientId"
     case baseUrl = "BaseUrl"
 }
 
