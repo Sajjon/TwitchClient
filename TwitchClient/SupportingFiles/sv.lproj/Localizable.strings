@@ -1,0 +1,11 @@
+//
+//  Localizable.strings
+//  TwitchClient
+//
+//  Created by Alexander Georgii-Hemming Cyon on 2017-03-19.
+//  Copyright © 2017 cyon. All rights reserved.
+//
+
+"FetchingGames" = "Hämtar spel 👾";
+"FetchingStreams" = "Hämtar strömmar 🎬";
+

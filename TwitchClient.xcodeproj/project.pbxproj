@@ -35,6 +35,8 @@
 		7B790BAC1E7E8D4D00BAFD5A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790BAB1E7E8D4D00BAFD5A /* TableViewCell.swift */; };
 		7B790BB01E7E8DAF00BAFD5A /* CellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790BAF1E7E8DAF00BAFD5A /* CellConfigurable.swift */; };
 		7B790BB21E7E8F7000BAFD5A /* TwitchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790BB11E7E8F7000BAFD5A /* TwitchModel.swift */; };
+		7B790BBA1E7EAF2A00BAFD5A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B790BB81E7EAF2A00BAFD5A /* Localizable.strings */; };
+		7B790BBE1E7EAFE400BAFD5A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790BBD1E7EAFE400BAFD5A /* Strings.swift */; };
 		7BD4D6CA1E7947F7007A1D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */; };
 		7BD4D6CC1E7947F7007A1D81 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C91E7947F7007A1D81 /* GameListViewController.swift */; };
 		7BDF8FF11E7AC30D000D11C3 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FF01E7AC30D000D11C3 /* Macros.swift */; };
@@ -74,6 +76,9 @@
 		7B790BAB1E7E8D4D00BAFD5A /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		7B790BAF1E7E8DAF00BAFD5A /* CellConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfigurable.swift; sourceTree = "<group>"; };
 		7B790BB11E7E8F7000BAFD5A /* TwitchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchModel.swift; sourceTree = "<group>"; };
+		7B790BB91E7EAF2A00BAFD5A /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7B790BBB1E7EAF3200BAFD5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7B790BBD1E7EAFE400BAFD5A /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Strings.swift; path = Strings.swift; sourceTree = "<group>"; };
 		7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BD4D6C71E7947F7007A1D81 /* TwitchClient-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TwitchClient-Info.plist"; sourceTree = "<group>"; };
 		7BD4D6C91E7947F7007A1D81 /* GameListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
@@ -247,6 +252,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		7B790BBC1E7EAFA500BAFD5A /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				7B790BBD1E7EAFE400BAFD5A /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		7BD4D6C51E7947F7007A1D81 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +267,7 @@
 				7B72ED641E7ABC7500F1133B /* Constants.swift */,
 				7B72ED5A1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift */,
 				7B790B741E7BD00B00BAFD5A /* Environments.plist */,
+				7B790BB81E7EAF2A00BAFD5A /* Localizable.strings */,
 				7BDF8FF01E7AC30D000D11C3 /* Macros.swift */,
 				7BD4D6C71E7947F7007A1D81 /* TwitchClient-Info.plist */,
 			);
@@ -273,6 +287,7 @@
 		7BDF8FF41E7AC506000D11C3 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				7B790BBC1E7EAFA500BAFD5A /* Generated */,
 				7BDF8FF51E7AC50E000D11C3 /* Margin.swift */,
 				7BDF8FF71E7AC8A1000D11C3 /* TwitchClientError.swift */,
 			);
@@ -297,6 +312,7 @@
 				292BD0329CB6732418A5EBD0 /* [CP] Check Pods Manifest.lock */,
 				7B4A2E211E7945E50017087A /* Sources */,
 				7BDF8FF91E7AC9CC000D11C3 /* SwiftLint */,
+				7B790BBF1E7EB00900BAFD5A /* SwiftGen Strings */,
 				7B4A2E221E7945E50017087A /* Frameworks */,
 				7B4A2E231E7945E50017087A /* Resources */,
 				CC1B6FC20E217640F2D6BD83 /* [CP] Embed Pods Frameworks */,
@@ -339,6 +355,7 @@
 			knownRegions = (
 				en,
 				Base,
+				sv,
 			);
 			mainGroup = 7B4A2E1C1E7945E50017087A;
 			productRefGroup = 7B4A2E261E7945E50017087A /* Products */;
@@ -356,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B4A2E331E7945E50017087A /* LaunchScreen.storyboard in Resources */,
+				7B790BBA1E7EAF2A00BAFD5A /* Localizable.strings in Resources */,
 				7B4A2E301E7945E50017087A /* Assets.xcassets in Resources */,
 				7B790B751E7BD00B00BAFD5A /* Environments.plist in Resources */,
 			);
@@ -378,6 +396,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		7B790BBF1E7EB00900BAFD5A /* SwiftGen Strings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftGen Strings";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Pods/SwiftGen/bin/swiftgen strings -t swift3 --output TwitchClient/Enums/Generated/Strings.swift TwitchClient/SupportingFiles/en.lproj/Localizable.strings";
 		};
 		7BDF8FF91E7AC9CC000D11C3 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -448,6 +480,7 @@
 				7B5C40181E7AB3520001A534 /* Router.swift in Sources */,
 				7B790B961E7C339B00BAFD5A /* Stream.swift in Sources */,
 				7BDF8FF61E7AC50E000D11C3 /* Margin.swift in Sources */,
+				7B790BBE1E7EAFE400BAFD5A /* Strings.swift in Sources */,
 				7B790B7D1E7C009200BAFD5A /* GameRouter.swift in Sources */,
 				7B790B981E7C34C300BAFD5A /* StreamsService.swift in Sources */,
 				7B72ED651E7ABC7500F1133B /* Constants.swift in Sources */,
@@ -473,6 +506,16 @@
 				7B4A2E321E7945E50017087A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		7B790BB81E7EAF2A00BAFD5A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B790BBB1E7EAF3200BAFD5A /* en */,
+				7B790BB91E7EAF2A00BAFD5A /* sv */,
+			);
+			name = Localizable.strings;
 			path = .;
 			sourceTree = "<group>";
 		};

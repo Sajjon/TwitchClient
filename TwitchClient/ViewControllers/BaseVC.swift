@@ -23,8 +23,8 @@ class BaseVC: UIViewController {
         return loadingView
     }()
 
-    init(loadingText: String) {
-        self.loadingText = loadingText
+    init(loadingText: L10n) {
+        self.loadingText = loadingText.string
         super.init(nibName: nil, bundle: nil)
         setup()
     }
