@@ -61,7 +61,7 @@ private extension StreamListViewController {
 
     func fetchData() {
         loadingView.show()
-        bag += streamsService.getStreams(for: game)
+        bag += streamsService.getStreams(for: game, pagination: Pagination(limit: 10))
             .success { streams in
                 self.setupTableSource(with: streams)
             }.failure { error in

@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 enum StreamRouter {
-    case streamsFor(Game)
+    case streamsFor(Game, Pagination)
 }
 
 extension StreamRouter: Router {
@@ -47,8 +47,8 @@ extension StreamRouter: Router {
 extension StreamRouter: ParameterRouter {
     var parameters: APIParameters? {
         switch self {
-        case .streamsFor(let game):
-            return APIParameters([.game: game.name])
+        case .streamsFor(let game, let pagination):
+            return APIParameters([.game: game.name, .limit: pagination.limit, .offset: pagination.offset])
         }
     }
 }

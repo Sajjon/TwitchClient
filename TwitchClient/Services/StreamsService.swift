@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 
 protocol StreamsServiceProtocol {
-    func getStreams(for game: Game) -> Observable<[Stream]>
+    func getStreams(for game: Game, pagination: Pagination) -> Observable<[Stream]>
 }
 
 final class StreamsService {
@@ -21,8 +21,8 @@ final class StreamsService {
 }
 
 extension StreamsService: StreamsServiceProtocol {
-    func getStreams(for game: Game) -> Observable<[Stream]> {
-        return makeArrayRequest(.streamsFor(game))
+    func getStreams(for game: Game, pagination: Pagination) -> Observable<[Stream]> {
+        return makeArrayRequest(.streamsFor(game, pagination))
     }
 }
 
