@@ -18,7 +18,7 @@ struct Game: TwitchModel {
 
 //TwitchModel requirement
 extension Game {
-    var imageUrl: URL { return logo.smallUrl }
+    var imageUrl: URL? { return logo.smallUrl }
 }
 
 typealias JSON = [String: Any]
@@ -28,7 +28,7 @@ extension Game: JSONElement {
         let game = Map(mappingType: .fromJSON, JSON: gameJson)
         name = try game.value("name")
         popularity = try game.value("popularity")
-        logo = try game.value("logo")
+        logo = try game.value("box")
         viewerCount = try map.value("viewers")
     }
 }

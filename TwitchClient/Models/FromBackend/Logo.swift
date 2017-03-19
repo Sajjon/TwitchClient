@@ -17,8 +17,14 @@ struct Logo {
 
 extension Logo: JSONElement {
     init(map: Map) throws {
-        smallUrl = try map.value("small", using: URLTransform())
-        mediumUrl = try map.value("medium", using: URLTransform())
-        largeUrl = try map.value("large", using: URLTransform())
+        smallUrl = try map.url("small")
+        mediumUrl = try map.url("medium")
+        largeUrl = try map.url("large")
+    }
+}
+
+extension Map {
+    func url(_ key: String) throws -> URL {
+        return try value(key, using: URLTransform(shouldEncodeURLString: false))
     }
 }

@@ -11,8 +11,18 @@ import UIKit
 import Cartography
 
 class TableViewCell: UITableViewCell {
-    lazy var nameLabel: UILabel = UILabel()
-    lazy var viewerCountLabel: UILabel = UILabel()
+    lazy var nameLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.boldSystemFont(ofSize: 20)
+        return label
+    }()
+
+    lazy var viewerCountLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 16)
+        return label
+    }()
+
     fileprivate lazy var labels: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -20,6 +30,7 @@ class TableViewCell: UITableViewCell {
         stackView.addArrangedSubview(self.viewerCountLabel)
         return stackView
     }()
+
     lazy var iconView: UIImageView = UIImageView()
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {

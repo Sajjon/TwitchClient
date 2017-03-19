@@ -12,7 +12,7 @@ protocol TwitchModel {
     var name: String { get }
     var viewerCount: Int64 { get }
     var popularity: Int64 { get }
-    var imageUrl: URL { get }
+    var imageUrl: URL? { get }
 
 }
 

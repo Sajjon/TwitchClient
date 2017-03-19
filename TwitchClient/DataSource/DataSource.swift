@@ -37,7 +37,11 @@ extension DataSource: UITableViewDataSource {
         }
         if let imageCell = cell as? ImageCell {
             imageCell.imageView.image = nil
-            Nuke.loadImage(with: model.imageUrl, into: imageCell.imageView)
+            if let url = model.imageUrl {
+                Nuke.loadImage(with: url, into: imageCell.imageView)
+            } else {
+                log.warning("Item '\(model.name)' lacks image")
+            }
         }
         return cell
     }

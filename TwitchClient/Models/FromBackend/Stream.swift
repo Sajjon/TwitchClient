@@ -10,9 +10,9 @@ import Foundation
 import ObjectMapper
 
 struct Stream: TwitchModel {
-    let viewerCount: Int64 // Around 10^19 (signed), which is greater than world population, propably until the end of time ;)
+    let viewerCount: Int64// Around 10^19 (signed), which is greater than world population, propably until the end of time ;)
     let name: String
-    let imageUrl: URL
+    let imageUrl: URL?
 }
 
 //TwitchModel requirement
@@ -27,6 +27,6 @@ extension Stream: JSONElement {
         let channelJson: JSON = try map.value("channel")
         let channel = Map(mappingType: .fromJSON, JSON: channelJson)
         name = try channel.value("display_name")
-        imageUrl = try channel.value("logo", using: URLTransform())
+        imageUrl = try? channel.url("logo")
     }
 }
