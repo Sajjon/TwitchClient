@@ -11,6 +11,8 @@ enum L10n {
   case fetchingGames
   /// Fetching streams 🎬
   case fetchingStreams
+  /// Twitch Top games
+  case twitchTopGames
 }
 // swiftlint:enable type_body_length
 
@@ -23,6 +25,8 @@ extension L10n: CustomStringConvertible {
         return L10n.tr(key: "FetchingGames")
       case .fetchingStreams:
         return L10n.tr(key: "FetchingStreams")
+      case .twitchTopGames:
+        return L10n.tr(key: "TwitchTopGames")
     }
   }
 

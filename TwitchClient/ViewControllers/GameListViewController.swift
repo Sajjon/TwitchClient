@@ -48,6 +48,7 @@ final class GameListViewController: BaseVC {
 
 private extension GameListViewController {
     func setupViews() {
+        title = tr(.twitchTopGames)
         view.addSubview(tableView)
         constrain(view, tableView) { (root, table) in
             table.size == root.size
