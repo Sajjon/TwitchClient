@@ -90,12 +90,12 @@ private extension LoadingView {
         centeringView.addSubview(label)
         centeringView.addSubview(activityIndicator)
 
-        let containerSize = selfSize - 2 * Margin.m40.rawValue
+        let containerSize = selfSize - 2 * Margin.huge.rawValue
         constrain(self, centeringView, activityIndicator, label) {
             (root, containerView, loader, label) in
-            loader.top == containerView.top + .m8
-            label.top == loader.bottom + .m8
-            label.bottom == containerView.bottom - .m8
+            loader.top == containerView.top + .small
+            label.top == loader.bottom + .small
+            label.bottom == containerView.bottom - .small
             loader.leading == containerView.leading
             loader.trailing == containerView.trailing
             label.leading == containerView.leading
@@ -109,10 +109,10 @@ private extension LoadingView {
     func setupConstraintsToCenterView(_ centeringView: UIView) {
         constrain(self, centeringView) {
             (root, containerView) in
-            containerView.top == root.top + .m40
-            containerView.leading == root.leading + .m40
-            containerView.bottom == root.bottom - .m40
-            containerView.trailing == root.trailing - .m40
+            containerView.top == root.top + .huge
+            containerView.leading == root.leading + .huge
+            containerView.bottom == root.bottom - .huge
+            containerView.trailing == root.trailing - .huge
         }
     }
 

@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 
 protocol GamesServiceProtocol {
-    func getUsers() -> Observable<[Game]>
+    func getGames(_ pagination: Pagination) -> Observable<[Game]>
 }
 
 final class GamesService {
@@ -21,7 +21,13 @@ final class GamesService {
 }
 
 extension GamesService: GamesServiceProtocol {
-    func getUsers() -> Observable<[Game]> {
-        fatalError()
+    func getGames(_ pagination: Pagination) -> Observable<[Game]> {
+        return makeArrayRequest(.topGames(pagination))
+    }
+}
+
+private extension GamesService {
+    func makeArrayRequest<Value: JSONElement>(_ router: GameRouter) -> Observable<[Value]> {
+        return httpClient.makeArrayRequest(router: router)
     }
 }

@@ -9,10 +9,26 @@
 import Foundation
 import ObjectMapper
 
-struct Game {}
+struct Game: TwitchModel {
+    let name: String
+    let viewerCount: Int64
+    let popularity: Int64
+    let logo: Logo
+}
 
+//TwitchModel requirement
+extension Game {
+    var imageUrl: URL { return logo.smallUrl }
+}
+
+typealias JSON = [String: Any]
 extension Game: JSONElement {
     init(map: Map) throws {
-        fatalError()
+        let gameJson: JSON = try map.value("game")
+        let game = Map(mappingType: .fromJSON, JSON: gameJson)
+        name = try game.value("name")
+        popularity = try game.value("popularity")
+        logo = try game.value("logo")
+        viewerCount = try map.value("viewers")
     }
 }

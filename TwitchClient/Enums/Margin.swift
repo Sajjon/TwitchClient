@@ -13,12 +13,10 @@ import Cartography
 /* You can use either "M4n" or "Margin" */
 typealias M4n = Margin
 enum Margin: CGFloat {
-    case m8 = 8
-    case m16 = 16
-    case m20 = 20
-    case m30 = 30
-    case m40 = 40
-    case m50 = 50
+    case small = 8
+    case normal = 16
+    case large = 20
+    case huge = 40
 }
 
 func == (lhs: NumericalEquality, rhs: Margin) -> NSLayoutConstraint {

@@ -7,5 +7,8 @@
 //
 
 import Foundation
+import UIKit
 
 let neededByCompiler = "Needed by compiler"
+
+let imageSizeSmall: CGFloat = 60

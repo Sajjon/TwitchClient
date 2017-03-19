@@ -52,7 +52,7 @@ private extension AppDelegate {
     }
 
     func showGui() {
-        guard let rootVC = container.resolve(GamesListViewController.self) else { return }
+        guard let rootVC = container.resolve(GameListViewController.self) else { return }
         window?.rootViewController = UINavigationController(rootViewController: rootVC)
     }
 }

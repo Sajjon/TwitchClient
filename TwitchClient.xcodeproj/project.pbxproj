@@ -19,13 +19,26 @@
 		7B72ED5B1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED5A1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift */; };
 		7B72ED5E1E7AB91700F1133B /* GamesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED5D1E7AB91700F1133B /* GamesService.swift */; };
 		7B72ED611E7AB95B00F1133B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED601E7AB95B00F1133B /* Game.swift */; };
-		7B72ED631E7AB98E00F1133B /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED621E7AB98E00F1133B /* List.swift */; };
 		7B72ED651E7ABC7500F1133B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B72ED641E7ABC7500F1133B /* Constants.swift */; };
 		7B790B751E7BD00B00BAFD5A /* Environments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B790B741E7BD00B00BAFD5A /* Environments.plist */; };
 		7B790B771E7BD10E00BAFD5A /* Environments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B761E7BD10E00BAFD5A /* Environments.swift */; };
 		7B790B7A1E7BD72900BAFD5A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B791E7BD72900BAFD5A /* LoadingView.swift */; };
+		7B790B7D1E7C009200BAFD5A /* GameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B7C1E7C009200BAFD5A /* GameRouter.swift */; };
+		7B790B821E7C02A100BAFD5A /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B811E7C02A100BAFD5A /* Pagination.swift */; };
+		7B790B851E7C135B00BAFD5A /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B841E7C135B00BAFD5A /* DataSource.swift */; };
+		7B790B881E7C172F00BAFD5A /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B871E7C172F00BAFD5A /* GameTableViewCell.swift */; };
+		7B790B8D1E7C31DD00BAFD5A /* UIViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B8C1E7C31DD00BAFD5A /* UIViewController_Extension.swift */; };
+		7B790B8F1E7C322F00BAFD5A /* StreamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B8E1E7C322F00BAFD5A /* StreamListViewController.swift */; };
+		7B790B941E7C337400BAFD5A /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B931E7C337400BAFD5A /* Logo.swift */; };
+		7B790B961E7C339B00BAFD5A /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B951E7C339B00BAFD5A /* Stream.swift */; };
+		7B790B981E7C34C300BAFD5A /* StreamsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B971E7C34C300BAFD5A /* StreamsService.swift */; };
+		7B790B9A1E7C350200BAFD5A /* StreamRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B991E7C350200BAFD5A /* StreamRouter.swift */; };
+		7B790BAC1E7E8D4D00BAFD5A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790BAB1E7E8D4D00BAFD5A /* TableViewCell.swift */; };
+		7B790BAE1E7E8D6E00BAFD5A /* StreamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790BAD1E7E8D6E00BAFD5A /* StreamTableViewCell.swift */; };
+		7B790BB01E7E8DAF00BAFD5A /* CellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790BAF1E7E8DAF00BAFD5A /* CellConfigurable.swift */; };
+		7B790BB21E7E8F7000BAFD5A /* TwitchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790BB11E7E8F7000BAFD5A /* TwitchModel.swift */; };
 		7BD4D6CA1E7947F7007A1D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */; };
-		7BD4D6CC1E7947F7007A1D81 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C91E7947F7007A1D81 /* GamesListViewController.swift */; };
+		7BD4D6CC1E7947F7007A1D81 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C91E7947F7007A1D81 /* GameListViewController.swift */; };
 		7BDF8FF11E7AC30D000D11C3 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FF01E7AC30D000D11C3 /* Macros.swift */; };
 		7BDF8FF31E7AC48F000D11C3 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FF21E7AC48F000D11C3 /* BaseVC.swift */; };
 		7BDF8FF61E7AC50E000D11C3 /* Margin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF8FF51E7AC50E000D11C3 /* Margin.swift */; };
@@ -40,21 +53,34 @@
 		7B4A2E321E7945E50017087A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B5C400F1E7AB1790001A534 /* RxSwift_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwift_Extension.swift; sourceTree = "<group>"; };
 		7B5C40151E7AB2A10001A534 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		7B5C40171E7AB3520001A534 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		7B5C40171E7AB3520001A534 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = HTTP/Router.swift; sourceTree = "<group>"; };
 		7B5C40191E7AB3780001A534 /* APIParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIParams.swift; sourceTree = "<group>"; };
 		7B5C401B1E7AB5000001A534 /* Dictionary_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary_Extension.swift; sourceTree = "<group>"; };
 		7B5C401D1E7AB6340001A534 /* RequestAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAdapter.swift; sourceTree = "<group>"; };
 		7B72ED5A1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjectionConfigurator.swift; sourceTree = "<group>"; };
 		7B72ED5D1E7AB91700F1133B /* GamesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesService.swift; sourceTree = "<group>"; };
 		7B72ED601E7AB95B00F1133B /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		7B72ED621E7AB98E00F1133B /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		7B72ED641E7ABC7500F1133B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7B790B741E7BD00B00BAFD5A /* Environments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Environments.plist; sourceTree = "<group>"; };
-		7B790B761E7BD10E00BAFD5A /* Environments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environments.swift; sourceTree = "<group>"; };
+		7B790B761E7BD10E00BAFD5A /* Environments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Environments.swift; path = Models/Environments.swift; sourceTree = "<group>"; };
 		7B790B791E7BD72900BAFD5A /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		7B790B7C1E7C009200BAFD5A /* GameRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRouter.swift; sourceTree = "<group>"; };
+		7B790B811E7C02A100BAFD5A /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		7B790B841E7C135B00BAFD5A /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		7B790B871E7C172F00BAFD5A /* GameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		7B790B8C1E7C31DD00BAFD5A /* UIViewController_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController_Extension.swift; sourceTree = "<group>"; };
+		7B790B8E1E7C322F00BAFD5A /* StreamListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamListViewController.swift; sourceTree = "<group>"; };
+		7B790B931E7C337400BAFD5A /* Logo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		7B790B951E7C339B00BAFD5A /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		7B790B971E7C34C300BAFD5A /* StreamsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamsService.swift; sourceTree = "<group>"; };
+		7B790B991E7C350200BAFD5A /* StreamRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamRouter.swift; sourceTree = "<group>"; };
+		7B790BAB1E7E8D4D00BAFD5A /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		7B790BAD1E7E8D6E00BAFD5A /* StreamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamTableViewCell.swift; sourceTree = "<group>"; };
+		7B790BAF1E7E8DAF00BAFD5A /* CellConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfigurable.swift; sourceTree = "<group>"; };
+		7B790BB11E7E8F7000BAFD5A /* TwitchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchModel.swift; sourceTree = "<group>"; };
 		7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BD4D6C71E7947F7007A1D81 /* TwitchClient-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TwitchClient-Info.plist"; sourceTree = "<group>"; };
-		7BD4D6C91E7947F7007A1D81 /* GamesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
+		7BD4D6C91E7947F7007A1D81 /* GameListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
 		7BDF8FF01E7AC30D000D11C3 /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
 		7BDF8FF21E7AC48F000D11C3 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		7BDF8FF51E7AC50E000D11C3 /* Margin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Margin.swift; sourceTree = "<group>"; };
@@ -106,6 +132,8 @@
 		7B4A2E271E7945E50017087A /* TwitchClient */ = {
 			isa = PBXGroup;
 			children = (
+				7B790B831E7C134E00BAFD5A /* DataSource */,
+				7B790B801E7C022F00BAFD5A /* Util */,
 				7BDF8FF41E7AC506000D11C3 /* Enums */,
 				7B5C400E1E7AB1660001A534 /* Extensions */,
 				7B5C40141E7AB2170001A534 /* HTTP */,
@@ -126,6 +154,7 @@
 				7B5C401B1E7AB5000001A534 /* Dictionary_Extension.swift */,
 				7B5C400F1E7AB1790001A534 /* RxSwift_Extension.swift */,
 				7BDF8FFA1E7ACA0C000D11C3 /* UIView_Extension.swift */,
+				7B790B8C1E7C31DD00BAFD5A /* UIViewController_Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -133,10 +162,10 @@
 		7B5C40141E7AB2170001A534 /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
+				7B790B7B1E7C008000BAFD5A /* Routers */,
 				7B5C40191E7AB3780001A534 /* APIParams.swift */,
 				7B5C40151E7AB2A10001A534 /* HTTPClient.swift */,
 				7B5C401D1E7AB6340001A534 /* RequestAdapter.swift */,
-				7B5C40171E7AB3520001A534 /* Router.swift */,
 			);
 			path = HTTP;
 			sourceTree = "<group>";
@@ -145,29 +174,84 @@
 			isa = PBXGroup;
 			children = (
 				7B72ED5D1E7AB91700F1133B /* GamesService.swift */,
+				7B790B971E7C34C300BAFD5A /* StreamsService.swift */,
 			);
-			name = Services;
 			path = Services;
 			sourceTree = "<group>";
 		};
 		7B72ED5F1E7AB95100F1133B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7B790B761E7BD10E00BAFD5A /* Environments.swift */,
-				7B72ED601E7AB95B00F1133B /* Game.swift */,
-				7B72ED621E7AB98E00F1133B /* List.swift */,
+				7B790B7F1E7C021100BAFD5A /* DTOs */,
+				7B790B7E1E7C020400BAFD5A /* FromBackend */,
 			);
-			name = Models;
 			path = Models;
 			sourceTree = "<group>";
 		};
 		7B790B781E7BD72100BAFD5A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7B790B861E7C172100BAFD5A /* Cells */,
 				7B790B791E7BD72900BAFD5A /* LoadingView.swift */,
 			);
-			name = Views;
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7B790B7B1E7C008000BAFD5A /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				7B5C40171E7AB3520001A534 /* Router.swift */,
+				7B790B7C1E7C009200BAFD5A /* GameRouter.swift */,
+				7B790B991E7C350200BAFD5A /* StreamRouter.swift */,
+			);
+			name = Routers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7B790B7E1E7C020400BAFD5A /* FromBackend */ = {
+			isa = PBXGroup;
+			children = (
+				7B72ED601E7AB95B00F1133B /* Game.swift */,
+				7B790B931E7C337400BAFD5A /* Logo.swift */,
+				7B790B951E7C339B00BAFD5A /* Stream.swift */,
+				7B790BB11E7E8F7000BAFD5A /* TwitchModel.swift */,
+			);
+			name = FromBackend;
+			sourceTree = "<group>";
+		};
+		7B790B7F1E7C021100BAFD5A /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				7B790B811E7C02A100BAFD5A /* Pagination.swift */,
+			);
+			name = DTOs;
+			sourceTree = "<group>";
+		};
+		7B790B801E7C022F00BAFD5A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7B790B761E7BD10E00BAFD5A /* Environments.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		7B790B831E7C134E00BAFD5A /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				7B790B841E7C135B00BAFD5A /* DataSource.swift */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		7B790B861E7C172100BAFD5A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7B790B871E7C172F00BAFD5A /* GameTableViewCell.swift */,
+				7B790BAB1E7E8D4D00BAFD5A /* TableViewCell.swift */,
+				7B790BAD1E7E8D6E00BAFD5A /* StreamTableViewCell.swift */,
+				7B790BAF1E7E8DAF00BAFD5A /* CellConfigurable.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		7BD4D6C51E7947F7007A1D81 /* SupportingFiles */ = {
@@ -187,7 +271,8 @@
 			isa = PBXGroup;
 			children = (
 				7BDF8FF21E7AC48F000D11C3 /* BaseVC.swift */,
-				7BD4D6C91E7947F7007A1D81 /* GamesListViewController.swift */,
+				7BD4D6C91E7947F7007A1D81 /* GameListViewController.swift */,
+				7B790B8E1E7C322F00BAFD5A /* StreamListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -198,7 +283,6 @@
 				7BDF8FF51E7AC50E000D11C3 /* Margin.swift */,
 				7BDF8FF71E7AC8A1000D11C3 /* TwitchClientError.swift */,
 			);
-			name = Enums;
 			path = Enums;
 			sourceTree = "<group>";
 		};
@@ -247,6 +331,11 @@
 					7B4A2E241E7945E50017087A = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -348,25 +437,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BD4D6CC1E7947F7007A1D81 /* GamesListViewController.swift in Sources */,
+				7BD4D6CC1E7947F7007A1D81 /* GameListViewController.swift in Sources */,
 				7B72ED5E1E7AB91700F1133B /* GamesService.swift in Sources */,
+				7B790B881E7C172F00BAFD5A /* GameTableViewCell.swift in Sources */,
+				7B790BAE1E7E8D6E00BAFD5A /* StreamTableViewCell.swift in Sources */,
+				7B790BB01E7E8DAF00BAFD5A /* CellConfigurable.swift in Sources */,
 				7B5C401E1E7AB6340001A534 /* RequestAdapter.swift in Sources */,
+				7B790B8F1E7C322F00BAFD5A /* StreamListViewController.swift in Sources */,
+				7B790B821E7C02A100BAFD5A /* Pagination.swift in Sources */,
 				7BD4D6CA1E7947F7007A1D81 /* AppDelegate.swift in Sources */,
 				7BDF8FFB1E7ACA0C000D11C3 /* UIView_Extension.swift in Sources */,
 				7B72ED5B1E7AB89E00F1133B /* DependencyInjectionConfigurator.swift in Sources */,
-				7B72ED631E7AB98E00F1133B /* List.swift in Sources */,
+				7B790B8D1E7C31DD00BAFD5A /* UIViewController_Extension.swift in Sources */,
 				7BDF8FF81E7AC8A1000D11C3 /* TwitchClientError.swift in Sources */,
 				7BDF8FF11E7AC30D000D11C3 /* Macros.swift in Sources */,
 				7B790B771E7BD10E00BAFD5A /* Environments.swift in Sources */,
+				7B790B851E7C135B00BAFD5A /* DataSource.swift in Sources */,
+				7B790B941E7C337400BAFD5A /* Logo.swift in Sources */,
 				7B5C40181E7AB3520001A534 /* Router.swift in Sources */,
+				7B790B961E7C339B00BAFD5A /* Stream.swift in Sources */,
 				7BDF8FF61E7AC50E000D11C3 /* Margin.swift in Sources */,
+				7B790B7D1E7C009200BAFD5A /* GameRouter.swift in Sources */,
+				7B790B981E7C34C300BAFD5A /* StreamsService.swift in Sources */,
 				7B72ED651E7ABC7500F1133B /* Constants.swift in Sources */,
+				7B790BAC1E7E8D4D00BAFD5A /* TableViewCell.swift in Sources */,
 				7B790B7A1E7BD72900BAFD5A /* LoadingView.swift in Sources */,
+				7B790BB21E7E8F7000BAFD5A /* TwitchModel.swift in Sources */,
 				7B72ED611E7AB95B00F1133B /* Game.swift in Sources */,
 				7B5C401C1E7AB5000001A534 /* Dictionary_Extension.swift in Sources */,
 				7BDF8FF31E7AC48F000D11C3 /* BaseVC.swift in Sources */,
 				7B5C40161E7AB2A10001A534 /* HTTPClient.swift in Sources */,
 				7B5C401A1E7AB3780001A534 /* APIParams.swift in Sources */,
+				7B790B9A1E7C350200BAFD5A /* StreamRouter.swift in Sources */,
 				7B5C40101E7AB1790001A534 /* RxSwift_Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

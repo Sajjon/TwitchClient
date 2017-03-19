@@ -16,7 +16,7 @@ enum EnvironmentKey: String {
 }
 
 protocol EnvironmentsProtocol {
-    func value<Value>(for key: String) -> Value?
+    func value<Value>(for key: EnvironmentKey) -> Value
 }
 
 final class Environments {
@@ -33,7 +33,8 @@ final class Environments {
 }
 
 extension Environments: EnvironmentsProtocol {
-    func value<Value>(for key: String) -> Value? {
-        return values[key] as? Value
+    func value<Value>(for key: EnvironmentKey) -> Value {
+        guard let value = values[key.rawValue] as? Value else { fatalError("Forgot to add value to plist?") }
+        return value
     }
 }

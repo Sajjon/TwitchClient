@@ -8,38 +8,20 @@
 
 import Foundation
 
-typealias Params = [String: Any]
-
 enum APIParameterKey: String {
     case offset
     case limit
+    case game
 }
 
-struct APIParams {
-    var dictionary: Params
+struct APIParameters {
+    var value: [String: Any]
 
     init(_ dictionary: [APIParameterKey: Any]) {
         let mapped = dictionary.map {
             (key: APIParameterKey, value: Any) in
             (key.rawValue, value)
         }
-        self.dictionary = Params(mapped)
-    }
-
-    init(dictionary: Params) {
-        self.dictionary = dictionary
-    }
-
-    init(_ jsonElement: JSONElement) {
-        self.dictionary = jsonElement.toJSON()
-    }
-
-    var urlQueryItems: [URLQueryItem] {
-        var items: [URLQueryItem] = []
-        for (key, value) in dictionary {
-            let queryItem = URLQueryItem(name: key, value: "\(value)")
-            items.append(queryItem)
-        }
-        return items
+        self.value = Dictionary(mapped)
     }
 }
