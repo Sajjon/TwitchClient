@@ -27,7 +27,7 @@ gamesService.getGames(Pagination(limit: 5))
 }.addDisposableTo(bag)
 ```
 
-So I have written an [extension on RxSwift](TwitchClient/Extensions/RxSwift_Extension) that enables this syntax instead:
+So I have written an [extension on RxSwift](TwitchClient/Extensions/RxSwift_Extension.swift) that enables this syntax instead:
 ```swift
 loadingView.show()
 bag += gamesService.getGames(Pagination(limit: 5))
