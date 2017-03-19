@@ -5,13 +5,11 @@
 //  Created by Alexander Georgii-Hemming Cyon on 2017-03-16.
 //  Copyright © 2017 cyon. All rights reserved.
 //
-
 import Foundation
 import Cartography
 
 private let selfSize: CGFloat = 200
 final class LoadingView: UIView {
-
     //MARK: Variables
     fileprivate lazy var activityIndicator: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView()
@@ -36,11 +34,7 @@ final class LoadingView: UIView {
 
     override var isHidden: Bool {
         didSet {
-            if isHidden {
-                hideNetworkLoadingInStatusBar()
-            } else {
-                showNetworkLoadingInStatusBar()
-            }
+            showNetworkLoadingInStatusBar(isVisible: !isHidden)
         }
     }
 
@@ -49,12 +43,7 @@ final class LoadingView: UIView {
         fatalError(neededByCompiler)
     }
 
-    init() {
-        super.init(frame: CGRect.zero)
-        setupViews()
-    }
-
-    init(loadingText: String?) {
+    init(loadingText: String) {
         super.init(frame:CGRect.zero)
         setupViews(loadingText)
     }
@@ -62,23 +51,16 @@ final class LoadingView: UIView {
 
 //MARK: Private Methods
 private extension LoadingView {
-    func setupViews(_ loadingText: String? = nil) {
+    func setupViews(_ loadingText: String) {
         backgroundColor = UIColor.black.withAlphaComponent(0.75)
         layer.cornerRadius = 25
-
         setupConstraints(loadingText)
-
         hide()
     }
 
-    func setupConstraints(_ loadingText: String?) {
-        if let loadingText = loadingText {
-            setupConstraintsWithLoadingText(loadingText)
-        } else {
-            setupConstraintsWithoutText()
-        }
-        constrain(self) {
-            (root) in
+    func setupConstraints(_ loadingText: String) {
+        setupConstraintsWithLoadingText(loadingText)
+        constrain(self) { (root) in
             root.width == selfSize
             root.height == selfSize
         }
@@ -89,10 +71,8 @@ private extension LoadingView {
         addSubview(centeringView)
         centeringView.addSubview(label)
         centeringView.addSubview(activityIndicator)
-
         let containerSize = selfSize - 2 * Margin.huge.rawValue
-        constrain(self, centeringView, activityIndicator, label) {
-            (root, containerView, loader, label) in
+        constrain(self, centeringView, activityIndicator, label) { (root, containerView, loader, label) in
             loader.top == containerView.top + .small
             label.top == loader.bottom + .small
             label.bottom == containerView.bottom - .small
@@ -107,24 +87,11 @@ private extension LoadingView {
     }
 
     func setupConstraintsToCenterView(_ centeringView: UIView) {
-        constrain(self, centeringView) {
-            (root, containerView) in
+        constrain(self, centeringView) { (root, containerView) in
             containerView.top == root.top + .huge
             containerView.leading == root.leading + .huge
             containerView.bottom == root.bottom - .huge
             containerView.trailing == root.trailing - .huge
         }
-    }
-
-    func setupConstraintsWithoutText() {
-        addSubview(activityIndicator)
-        constrain(self, activityIndicator) {
-            (root, loader) in
-            loader.center == root.center
-        }
-
-        let scale: CGFloat = 1.5
-        let transform = CGAffineTransform(scaleX: scale, y: scale)
-        activityIndicator.transform = transform
     }
 }

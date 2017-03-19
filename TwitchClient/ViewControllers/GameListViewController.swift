@@ -32,7 +32,7 @@ final class GameListViewController: BaseVC {
 
     init(gamesService: GamesServiceProtocol) {
         self.gamesService = gamesService
-        super.init()
+        super.init(loadingText: "Fetching games")
     }
     
     required init?(coder aDecoder: NSCoder) {

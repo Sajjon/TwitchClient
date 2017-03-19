@@ -19,7 +19,7 @@ type_name:
     error: 35
 
 file_length:
-  error: 200
+  error: 100
 
 variable_name:
   min_length: 2

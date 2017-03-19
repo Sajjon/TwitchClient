@@ -9,15 +9,12 @@
 import Foundation
 
 enum TwitchClientError: Int, Error {
-    case badInput = 10000
-    case httpError = 11000
+    case badUrl = 10000
 
     var errorMessage: String {
         switch self {
-        case .badInput:
-            return "Bad input"
-        case .httpError:
-            return "Http error"
+        case .badUrl:
+            return "Bad url"
         }
     }
 

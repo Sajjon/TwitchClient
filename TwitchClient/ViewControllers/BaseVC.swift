@@ -11,7 +11,7 @@ import UIKit
 import Cartography
 
 class BaseVC: UIViewController {
-    var loadingText: String?
+    private var loadingText: String
     lazy var loadingView: LoadingView = {
         let loadingView = LoadingView(loadingText: self.loadingText)
         self.view.addSubview(loadingView)
@@ -23,7 +23,7 @@ class BaseVC: UIViewController {
         return loadingView
     }()
 
-    init(loadingText: String? = nil) {
+    init(loadingText: String) {
         self.loadingText = loadingText
         super.init(nibName: nil, bundle: nil)
         setup()

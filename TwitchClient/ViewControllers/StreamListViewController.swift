@@ -35,7 +35,7 @@ final class StreamListViewController: BaseVC {
     init(game: Game, streamsService: StreamsServiceProtocol) {
         self.streamsService = streamsService
         self.game = game
-        super.init()
+        super.init(loadingText: "Fetching streams")
     }
 
     required init?(coder aDecoder: NSCoder) {

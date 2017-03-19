@@ -22,7 +22,7 @@ protocol ParameterRouter {
 
 extension Router {
     func asURLRequest() throws -> URLRequest {
-        guard let url = URL(string: path) else { throw TwitchClientError.httpError }
+        guard let url = URL(string: path) else { throw TwitchClientError.badUrl }
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue
         if let pr = self as? ParameterRouter, let parameters = pr.parameters {

@@ -26,7 +26,6 @@
 		7B790B7D1E7C009200BAFD5A /* GameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B7C1E7C009200BAFD5A /* GameRouter.swift */; };
 		7B790B821E7C02A100BAFD5A /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B811E7C02A100BAFD5A /* Pagination.swift */; };
 		7B790B851E7C135B00BAFD5A /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B841E7C135B00BAFD5A /* DataSource.swift */; };
-		7B790B881E7C172F00BAFD5A /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B871E7C172F00BAFD5A /* GameTableViewCell.swift */; };
 		7B790B8D1E7C31DD00BAFD5A /* UIViewController_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B8C1E7C31DD00BAFD5A /* UIViewController_Extension.swift */; };
 		7B790B8F1E7C322F00BAFD5A /* StreamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B8E1E7C322F00BAFD5A /* StreamListViewController.swift */; };
 		7B790B941E7C337400BAFD5A /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B931E7C337400BAFD5A /* Logo.swift */; };
@@ -34,7 +33,6 @@
 		7B790B981E7C34C300BAFD5A /* StreamsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B971E7C34C300BAFD5A /* StreamsService.swift */; };
 		7B790B9A1E7C350200BAFD5A /* StreamRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790B991E7C350200BAFD5A /* StreamRouter.swift */; };
 		7B790BAC1E7E8D4D00BAFD5A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790BAB1E7E8D4D00BAFD5A /* TableViewCell.swift */; };
-		7B790BAE1E7E8D6E00BAFD5A /* StreamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790BAD1E7E8D6E00BAFD5A /* StreamTableViewCell.swift */; };
 		7B790BB01E7E8DAF00BAFD5A /* CellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790BAF1E7E8DAF00BAFD5A /* CellConfigurable.swift */; };
 		7B790BB21E7E8F7000BAFD5A /* TwitchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B790BB11E7E8F7000BAFD5A /* TwitchModel.swift */; };
 		7BD4D6CA1E7947F7007A1D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */; };
@@ -53,7 +51,7 @@
 		7B4A2E321E7945E50017087A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B5C400F1E7AB1790001A534 /* RxSwift_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwift_Extension.swift; sourceTree = "<group>"; };
 		7B5C40151E7AB2A10001A534 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		7B5C40171E7AB3520001A534 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = HTTP/Router.swift; sourceTree = "<group>"; };
+		7B5C40171E7AB3520001A534 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		7B5C40191E7AB3780001A534 /* APIParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIParams.swift; sourceTree = "<group>"; };
 		7B5C401B1E7AB5000001A534 /* Dictionary_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary_Extension.swift; sourceTree = "<group>"; };
 		7B5C401D1E7AB6340001A534 /* RequestAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAdapter.swift; sourceTree = "<group>"; };
@@ -62,12 +60,11 @@
 		7B72ED601E7AB95B00F1133B /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		7B72ED641E7ABC7500F1133B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7B790B741E7BD00B00BAFD5A /* Environments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Environments.plist; sourceTree = "<group>"; };
-		7B790B761E7BD10E00BAFD5A /* Environments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Environments.swift; path = Models/Environments.swift; sourceTree = "<group>"; };
+		7B790B761E7BD10E00BAFD5A /* Environments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environments.swift; sourceTree = "<group>"; };
 		7B790B791E7BD72900BAFD5A /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		7B790B7C1E7C009200BAFD5A /* GameRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRouter.swift; sourceTree = "<group>"; };
 		7B790B811E7C02A100BAFD5A /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		7B790B841E7C135B00BAFD5A /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		7B790B871E7C172F00BAFD5A /* GameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 		7B790B8C1E7C31DD00BAFD5A /* UIViewController_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController_Extension.swift; sourceTree = "<group>"; };
 		7B790B8E1E7C322F00BAFD5A /* StreamListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamListViewController.swift; sourceTree = "<group>"; };
 		7B790B931E7C337400BAFD5A /* Logo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
@@ -75,7 +72,6 @@
 		7B790B971E7C34C300BAFD5A /* StreamsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamsService.swift; sourceTree = "<group>"; };
 		7B790B991E7C350200BAFD5A /* StreamRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamRouter.swift; sourceTree = "<group>"; };
 		7B790BAB1E7E8D4D00BAFD5A /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		7B790BAD1E7E8D6E00BAFD5A /* StreamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamTableViewCell.swift; sourceTree = "<group>"; };
 		7B790BAF1E7E8DAF00BAFD5A /* CellConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfigurable.swift; sourceTree = "<group>"; };
 		7B790BB11E7E8F7000BAFD5A /* TwitchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchModel.swift; sourceTree = "<group>"; };
 		7BD4D6C61E7947F7007A1D81 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,13 +129,13 @@
 			isa = PBXGroup;
 			children = (
 				7B790B831E7C134E00BAFD5A /* DataSource */,
-				7B790B801E7C022F00BAFD5A /* Util */,
 				7BDF8FF41E7AC506000D11C3 /* Enums */,
 				7B5C400E1E7AB1660001A534 /* Extensions */,
 				7B5C40141E7AB2170001A534 /* HTTP */,
 				7B72ED5F1E7AB95100F1133B /* Models */,
 				7B72ED5C1E7AB90900F1133B /* Services */,
 				7BD4D6C51E7947F7007A1D81 /* SupportingFiles */,
+				7B790B801E7C022F00BAFD5A /* Util */,
 				7BD4D6C81E7947F7007A1D81 /* ViewControllers */,
 				7B790B781E7BD72100BAFD5A /* Views */,
 				7B4A2E2F1E7945E50017087A /* Assets.xcassets */,
@@ -153,8 +149,8 @@
 			children = (
 				7B5C401B1E7AB5000001A534 /* Dictionary_Extension.swift */,
 				7B5C400F1E7AB1790001A534 /* RxSwift_Extension.swift */,
-				7BDF8FFA1E7ACA0C000D11C3 /* UIView_Extension.swift */,
 				7B790B8C1E7C31DD00BAFD5A /* UIViewController_Extension.swift */,
+				7BDF8FFA1E7ACA0C000D11C3 /* UIView_Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -200,12 +196,11 @@
 		7B790B7B1E7C008000BAFD5A /* Routers */ = {
 			isa = PBXGroup;
 			children = (
-				7B5C40171E7AB3520001A534 /* Router.swift */,
 				7B790B7C1E7C009200BAFD5A /* GameRouter.swift */,
+				7B5C40171E7AB3520001A534 /* Router.swift */,
 				7B790B991E7C350200BAFD5A /* StreamRouter.swift */,
 			);
-			name = Routers;
-			path = ..;
+			path = Routers;
 			sourceTree = "<group>";
 		};
 		7B790B7E1E7C020400BAFD5A /* FromBackend */ = {
@@ -216,7 +211,7 @@
 				7B790B951E7C339B00BAFD5A /* Stream.swift */,
 				7B790BB11E7E8F7000BAFD5A /* TwitchModel.swift */,
 			);
-			name = FromBackend;
+			path = FromBackend;
 			sourceTree = "<group>";
 		};
 		7B790B7F1E7C021100BAFD5A /* DTOs */ = {
@@ -224,7 +219,7 @@
 			children = (
 				7B790B811E7C02A100BAFD5A /* Pagination.swift */,
 			);
-			name = DTOs;
+			path = DTOs;
 			sourceTree = "<group>";
 		};
 		7B790B801E7C022F00BAFD5A /* Util */ = {
@@ -232,7 +227,7 @@
 			children = (
 				7B790B761E7BD10E00BAFD5A /* Environments.swift */,
 			);
-			name = Util;
+			path = Util;
 			sourceTree = "<group>";
 		};
 		7B790B831E7C134E00BAFD5A /* DataSource */ = {
@@ -240,18 +235,16 @@
 			children = (
 				7B790B841E7C135B00BAFD5A /* DataSource.swift */,
 			);
-			name = DataSource;
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		7B790B861E7C172100BAFD5A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				7B790B871E7C172F00BAFD5A /* GameTableViewCell.swift */,
-				7B790BAB1E7E8D4D00BAFD5A /* TableViewCell.swift */,
-				7B790BAD1E7E8D6E00BAFD5A /* StreamTableViewCell.swift */,
 				7B790BAF1E7E8DAF00BAFD5A /* CellConfigurable.swift */,
+				7B790BAB1E7E8D4D00BAFD5A /* TableViewCell.swift */,
 			);
-			name = Cells;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		7BD4D6C51E7947F7007A1D81 /* SupportingFiles */ = {
@@ -439,8 +432,6 @@
 			files = (
 				7BD4D6CC1E7947F7007A1D81 /* GameListViewController.swift in Sources */,
 				7B72ED5E1E7AB91700F1133B /* GamesService.swift in Sources */,
-				7B790B881E7C172F00BAFD5A /* GameTableViewCell.swift in Sources */,
-				7B790BAE1E7E8D6E00BAFD5A /* StreamTableViewCell.swift in Sources */,
 				7B790BB01E7E8DAF00BAFD5A /* CellConfigurable.swift in Sources */,
 				7B5C401E1E7AB6340001A534 /* RequestAdapter.swift in Sources */,
 				7B790B8F1E7C322F00BAFD5A /* StreamListViewController.swift in Sources */,

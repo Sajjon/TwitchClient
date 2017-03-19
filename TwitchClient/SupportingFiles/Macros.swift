@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-private func showNetworkLoadingInStatusBar(isVisible: Bool) {
+func showNetworkLoadingInStatusBar(isVisible: Bool) {
     UIApplication.shared.isNetworkActivityIndicatorVisible = isVisible
 }
 
